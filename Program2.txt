@@ -1,0 +1,12 @@
+int16 a[5];
+int16 i;
+
+i medalo 0;
+
+jabtak (i < 5) shro
+    agar (a[i] = 0) shro
+        nikal;
+    khatam
+
+    i medalo (i + 1);
+khatam

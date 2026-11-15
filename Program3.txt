@@ -1,0 +1,12 @@
+int32 i;
+int32 sum;
+
+i medalo 1;
+sum medalo 0;
+
+jabtak (i < 6) shro
+    sum medalo (sum + i);
+    i medalo (i + 1);
+khatam
+
+print(sum);

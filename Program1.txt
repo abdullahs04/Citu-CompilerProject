@@ -1,0 +1,7 @@
+int16 i;
+i medalo 0;
+ 
+jabtak (i < 5) shro
+    print(i);
+    i medalo (i + 1);
+khatam

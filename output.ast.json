@@ -1,0 +1,30 @@
+{
+  "node": "Program",
+  "statements": [
+    { "node": "VarDecl", "type": "int16", "name": "a", "arraySize": 5 },
+    { "node": "VarDecl", "type": "int16", "name": "i" },
+    { "node": "Assign", "target": { "node": "Variable", "name": "i" }, "value": { "node": "Literal", "type": "INT", "value": "0" } },
+    {
+      "node": "While",
+      "condition": { "node": "BinaryExpr", "op": "<", "left": { "node": "Variable", "name": "i" }, "right": { "node": "Literal", "type": "INT", "value": "5" } },
+      "body":
+      {
+        "node": "Block",
+        "statements": [
+          {
+            "node": "If",
+            "condition": { "node": "BinaryExpr", "op": "=", "left": { "node": "ArrayAccess", "name": "a", "index": { "node": "Variable", "name": "i" } }, "right": { "node": "Literal", "type": "INT", "value": "0" } },
+            "then":
+            {
+              "node": "Block",
+              "statements": [
+                { "node": "Break" }
+              ]
+            }
+          },
+          { "node": "Assign", "target": { "node": "Variable", "name": "i" }, "value": { "node": "BinaryExpr", "op": "+", "left": { "node": "Variable", "name": "i" }, "right": { "node": "Literal", "type": "INT", "value": "1" } } }
+        ]
+      }
+    }
+  ]
+}

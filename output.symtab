@@ -1,0 +1,3 @@
+SCOPE,NAME,TYPE,IS_ARRAY,SIZE,OFFSET
+0,i,int32,false,1,0
+0,sum,int32,false,1,4

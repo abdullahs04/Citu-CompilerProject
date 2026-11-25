@@ -1,6 +1,7 @@
 #ifndef AST_H
 #define AST_H
 
+#include "token.h"
 #include <string>
 #include <vector>
 #include <memory>
